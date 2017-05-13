@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="./js/ith.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/ith.css">
+    <link rel="stylesheet" href="./css/hint.min.css"></link>
     <title>Illinois Town Halls</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -32,19 +33,79 @@
     </div>
 <hr class="sub">
     <div class="container">
+        <div class="panel panel-default">
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Picture</th>
+                        <th>Name</th>
+                        <th>District</th>
+                        <th>Party Affiliation</th>
+                        <th>Last Town Hall</th>
+                        <th>Next Town Hall</th>
+                        <th>Days Since Town Hall</th>
+                    </tr>
+                </thead>
+                <tbody class="con-table">
+                    <tr class="con ind">
+                        <th scope="row" class="expand-caret"><i class="fa fa-caret-down fa-3x"></i></th>
+                        <td class="profile-photo"><img src="./res/no_photo.jpg" width="100"></th>
+                        <td>A Congressman</td>
+                        <td>IL-999</td>
+                        <td>Independent</td>
+                        <td>1/1/1970</td>
+                        <td>1/1/1970</td>
+                        <td>0 days<br>since last town hall</td>
+                        <td><span class="hint--top" aria-label="Threshold A!"><i class="fa fa-warning fa-2x"></i></span></td>
+                    </tr>
+                    <tr class="ind exp">
+                        <td></td>
+                        <td colspan="8">
+                            <div>
+                                &emsp;<span><b>Last Town Hall:</b> <a href="#" target="_blank">N/A</a>, 1/1/1970 00:00AM
+                                &emsp;&#9670;&emsp;
+                                <b>Next Town Hall: </b> </b><a href="#" target="_blank">N/A</a>, 1/1/1970 00:00AM</span>
+                                &emsp;<span class="pull-right">(updated 1/1/1970 by <a href="http://www.twitter.com/iltownhalls" target="_blank">@iltownhalls)</a></span> <br>
+                                &emsp;<span>notes</span> <br> <br>
+                                &emsp;
+                                <a href="#" class="hint--top" aria-label="congressman_name's Facebook page"><i class="fa fa-facebook-square fa-2x"></i></a> &nbsp;
+                                <a href="#" class="hint--top" aria-label="congressman_name's Twitter page"><i class="fa fa-twitter-square fa-2x"></i></a> &nbsp;
+                                <a href="#" class="hint--top" aria-label="congressman_name's website"><i class="fa fa-external-link-square fa-2x"></i></a> &nbsp;
+                                <a href="#" class="hint--top" aria-label="congressman_name's email"><i class="fa fa-envelope-square fa-2x"></i></a>
+                                <span class="pull-right">
+                                    <button type="button" class="btn btn-xs btn-warning">Report Error</button> &nbsp;
+                                    <button type="button" class="btn btn-xs btn-info">Update Information</button>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
 
-            <!-- example row unit -->
-            <div class="row">
-                <div class="col-xs-1">pic</div>
-                <div class="col-xs-2">name</div>
-                <div class="col-xs-1">district</div>
-                <div class="col-xs-1">party</div>
-                <div class="col-xs-2">last town hall</div>
-                <div class="col-xs-2">next town hall</div>
-                <div class="col-xs-2">days since town hall</div>
-                <div class="col-xs-1">election</div>
-            </div>
-
+                    <tr class="con rep">
+                        <th scope="row" class="expand-caret"><i class="fa fa-caret-right fa-3x"></i></th>
+                        <td class="profile-photo"><img src="./res/no_photo.jpg" width="100"></th>
+                        <td>A Congressman</td>
+                        <td>IL-998</td>
+                        <td>Republican</td>
+                        <td>1/1/1970</td>
+                        <td>1/1/1970</td>
+                        <td>0 days since last town hall</td>
+                        <td><span class="hint--top" aria-label="Threshold B!"><i class="fa fa-warning fa-2x"></i></span></td>
+                    </tr>
+                    <tr class="con dem">
+                        <th scope="row" class="expand-caret"><i class="fa fa-caret-right fa-3x"></i></th>
+                        <td class="profile-photo"><img src="./res/no_photo.jpg" width="100"></th>
+                        <td>A Congressman</td>
+                        <td>IL-997</td>
+                        <td>Democrat</td>
+                        <td>1/1/1970</td>
+                        <td>1/1/1970</td>
+                        <td>0 days since last town hall</td>
+                        <td><span class="hint--top" aria-label="Threshold C!"><i class="fa fa-warning fa-2x"></i></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
     </div>
 <hr class="sub">

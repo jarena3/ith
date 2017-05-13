@@ -11,6 +11,11 @@ footer {
   color: #7f8c8d; 
 }
 
+table {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
 footer a:hover{
   text-decoration: none;
   font-style: bold;
@@ -21,6 +26,74 @@ hr.sub {
 	background-color: #34495e;
 	border-top: 2px solid #34495e;
 }
+
+/* -- Table ----------*/
+
+td {
+  vertical-align: middle!important;
+    border-color:#2c3e50;
+
+}
+
+th {
+  vertical-align: middle!important;
+    border-color:#2c3e50!
+
+}
+
+.panel {
+  border-color:#2c3e50!important;
+      border:2px;
+}
+
+.rep {
+  background-color: #c0392b;
+  color: #ecf0f1;
+}
+.rep:hover{
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.dem {
+  background-color: #2980b9;
+  color: #ecf0f1;
+}
+.dem:hover{
+  background-color: #3498db;
+  color: #fff;
+}
+
+.ind {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+.ind:hover{
+  background-color: #ecf0f1;
+  color: #000;
+}
+.exp{
+  background-color: #ecf0f1;
+  color: #000;
+}
+
+.expand-caret{
+  width:40px;
+  color: #000;
+}
+.expand-caret:hover{
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.profile-photo img{
+  border-radius: 5px!important;
+}
+
+.indent {
+  background-color: transparent!important;
+}
+
 
 /*-- Title -------- */
 
