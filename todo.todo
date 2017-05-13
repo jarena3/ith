@@ -1,0 +1,12 @@
+special: congressmen who voted for the ahca (expanded by default)
+<br><br>
+full list (default sort by days since town hall)
+<br>
+pic | name | district | party | last town hall | next town hall | days since town hall | election cycle
+<br>
+>>expands to:
+prior town hall location, datetime
+next town hall location, datetime
+notes
+contact info
+button - report error | button - update information
