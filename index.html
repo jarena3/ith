@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="ithApp">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-    <script src="ith.js"></script>
-    <link rel="stylesheet" type="text/css" href="ith.css">
+    <script src="./js/ith.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/ith.css">
     <title>Illinois Town Halls</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/e80ce71454.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,47 +25,52 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h1>Illinois Town Halls</h1>
+          <h1 class="title">Illinois Town Halls</h1>
+          <h2 class="subtitle">A free resource to help fellow Illinois residents find when and where their representative is holding a town hall meeting</h2>
         </div>
       </div>
     </div>
-<hr>
+<hr class="sub">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          special: congressmen who voted for the ahca (expanded by default)
-          <br><br>
-          full list (default sort by days since town hall)
-          <br>
-          pic | name | district | party | last town hall | next town hall | days since town hall | election cycle
-          <br>
-          >>expands to:
-          prior town hall location, datetime
-          next town hall location, datetime
-          notes
-          contact info
-        </div>
-      </div>
+
+            <!-- example row unit -->
+            <div class="row">
+                <div class="col-xs-1">pic</div>
+                <div class="col-xs-2">name</div>
+                <div class="col-xs-1">district</div>
+                <div class="col-xs-1">party</div>
+                <div class="col-xs-2">last town hall</div>
+                <div class="col-xs-2">next town hall</div>
+                <div class="col-xs-2">days since town hall</div>
+                <div class="col-xs-1">election</div>
+            </div>
+
+
     </div>
-    <!--<div class="container">
-        <div ng-controller="StreamersController as streamers">
-            <div ng-repeat="s in streamers.list">
-                <a href={{s.channel.url}} target="blank">
-                    <div class="container listItem">
-                        <div class="col-md-3 preview"> <img src={{s.preview.large}}></div>
-                        <div class="col-md-6 name centered">{{s.channel.name}}
-                            <br><sub>({{s.channel.broadcaster_language}})</sub></div>
-                        <div class="col-md-1 viewers centered">viewers:
-                            <br><i class="vCount">{{s.viewers}}</i></div>
-                </a>
-              </div>
-                <br>
-        </div>
-    </div> -->
-<hr>
+<hr class="sub">
     <footer>
-        &emsp;v1.0.1; Not affiliated in any way with any business or political organization.
+        v0.0.1 <br> 
+        <i>Not affiliated in any way with any business or political organization.</i>
+        <br><br>
+        <a href="#" data-toggle="modal" data-target="#aboutModal">About</a>&emsp;&#9670;&emsp;
+        <a href="mailto:contact@illinoistownhalls.com">Contact</a>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

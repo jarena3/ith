@@ -1,0 +1,63 @@
+body {
+    background-image: url('../res/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #7f8c8d; 
+}
+
+footer a:hover{
+  text-decoration: none;
+  font-style: bold;
+  color:#d35400;
+}
+
+hr.sub {
+	background-color: #34495e;
+	border-top: 2px solid #34495e;
+}
+
+/*-- Title -------- */
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 6rem;
+  color: #ecf0f1; 
+}
+
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 1.75rem;
+  color: #7f8c8d; 
+}
+
+/* -- End Title ---------- */
+
+/* -- Modal ---------- */
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
